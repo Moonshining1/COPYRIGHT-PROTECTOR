@@ -27,16 +27,16 @@ async def start_command_handler(_, msg):
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await msg.reply_photo(
-        photo="https://telegra.ph/file/8f6b2cc26b522a252b16a.jpg",
+        photo="https://telegra.ph/file/2cc725929d9a9f3c506ad.jpg",
         caption=START_TEXT,
         reply_markup=reply_markup
     )
 
 # Callback Query Handler
 gd_buttons = [
-    [InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/JARVIS_V2"),
+    [InlineKeyboardButton("🇲σ᭡፝֟ɳ🌙", url=f"https://t.me/Moonshining2"),
      InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data="back_to_start"),
-     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/JARVIS_V_SUPPORT")]
+     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Kittyxupdates")]
 ]
 
 @app.on_callback_query(filters.regex("vip_back"))
@@ -82,7 +82,7 @@ async def activevc(_, message: Message):
         f"➪ꜱᴛᴏʀᴀɢᴇ: {size_formatter(storage.total)} [ᴛᴏᴛᴀʟ]\n"
         f"➪{size_formatter(storage.used)} [ᴜsᴇᴅ]\n"
         f"➪{size_formatter(storage.free)} [ғʀᴇᴇ]\n"
-        f"➪ᴊᴀʀᴠɪs ᴠᴇʀsɪᴏɴ: {python_version},"
+        f"➪ᴍᴏᴏɴ ᴠᴇʀsɪᴏɴ: {python_version},"
     )
 
     await message.reply(reply_text, quote=True)
